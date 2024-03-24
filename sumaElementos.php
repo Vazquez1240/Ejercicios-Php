@@ -1,6 +1,8 @@
 <?php
 
+# Se crea la funcion sumarElementos que recibe un array como parametros
 function sumarElementos($array){
+
     return array_reduce($array, function($carry, $item){
         return $carry + $item;
     });
